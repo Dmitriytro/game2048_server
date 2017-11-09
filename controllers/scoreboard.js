@@ -46,7 +46,7 @@ router.put('/:id',function(req,res){
             res.json({success: false, message: 'Failed to create a new list. Error: ' + err});
         }
         else{
-            res.status(200).send(player);
+            res.status(200).send(result);
         }
     });
 });
