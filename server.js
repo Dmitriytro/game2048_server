@@ -8,7 +8,7 @@ const scoreboard = require('./controllers/scoreboard');
 const config = require('./config/database');
 
 const app = express();
-const port = 3000;
+const port = 80;
 
 
 app.use(cors());
