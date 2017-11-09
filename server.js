@@ -20,7 +20,7 @@ app.get('/', function (req, res) {
     res.send('Hello World app');
 });
 
-mongoose.connect(config.database);
+// mongoose.connect(config.database);
 app.use('/scoreboard',scoreboard);
 
 app.listen(port,function(){
