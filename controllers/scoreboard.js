@@ -25,7 +25,7 @@ router.get('/:id', function (req, res) {
 });
 router.post('/',function(req,res){
     var newProgress = new scoreboard({
-        player: req.body.name,
+        name: req.body.name,
         score: req.body.score,
         bestScore: req.body.bestScore,
         lastPosition: req.body.lastPosition
@@ -46,7 +46,7 @@ router.put('/:id',function(req,res){
             res.json({success: false, message: 'Failed to create a new list. Error: ' + err});
         }
         else{
-            res.status(200).send(result);
+            res.status(200).send(player);
         }
     });
 });
