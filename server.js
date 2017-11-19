@@ -8,6 +8,7 @@ const scoreboard = require('./controllers/scoreboard');
 const config = require('./config/database');
 
 const app = express();
+
 const port = 80;
 // const port = 3000;
 
